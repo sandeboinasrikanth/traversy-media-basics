@@ -6,12 +6,12 @@ function Tasks({tasks,onDelete, onToggle}) {
     <>
     {
         tasks.map((task)=>{
-            const {id, text,day,remainder}=task;
+            const {id, text,day,reminder}=task;
             return <Task 
                         key={id} 
                         text={text} 
                         day={day} 
-                        remainder={remainder} 
+                        reminder={reminder} 
                         onDelete={onDelete} 
                         id={id} 
                         onToggle={onToggle}
